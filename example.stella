@@ -1,0 +1,21 @@
+language core;
+
+extend with #sum-types;
+
+fn f(x : Nat) -> fn(Nat) -> Nat {
+  return fn(y : Nat) {
+    return x
+  }
+}
+
+fn g(x : Bool) -> Nat {
+  return 0
+}
+
+fn main(x : Nat) -> Nat {
+  return
+    match inl(0) {
+      inl(a) => a
+    | inr(x) => f(x)(g(x))
+    }
+}

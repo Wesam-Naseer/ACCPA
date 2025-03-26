@@ -1,0 +1,79 @@
+[
+  {
+    "file": "tests\\sum-types\\well-typed\\sum-types-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\sum-types\\well-typed\\sum-types-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\sum-types\\well-typed\\sum-types-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-9.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-8.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-7.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_ILLEGAL_EMPTY_MATCHING"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-6.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_ILLEGAL_EMPTY_MATCHING"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-5.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NONEXHAUSTIVE_MATCH_PATTERNS"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-13.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-12.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_PATTERN_FOR_TYPE"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-11.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_INJECTION"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-10.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_INJECTION"
+  },
+  {
+    "file": "tests\\sum-types\\ill-typed\\bad-sum-types-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+  }
+]
