@@ -1,5 +1,153 @@
 [
   {
+    "file": "tests\\variants\\well-typed\\variants-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\variants\\well-typed\\variants-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\variants\\well-typed\\variants-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-variant-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-variant-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-variant-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-variable-label-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT_LABEL"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-variable-label-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT_LABEL"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-type-of-expression-with-alternative-errors.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT_LABEL"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-type-of-expression-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-type-of-expression-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_VARIANT_LABEL"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-type-of-expression-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-type-of-expression-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-pattern-match-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_PATTERN_FOR_TYPE"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\unexpected-pattern-match-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_PATTERN_FOR_TYPE"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\undefined-variable-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\non-exaustive-match-patterns-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NONEXHAUSTIVE_MATCH_PATTERNS"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\ambiguous-variant-type-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\ambiguous-variant-type-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_AMBIGUOUS_VARIANT_TYPE"
+  },
+  {
+    "file": "tests\\variants\\ill-typed\\ambiguous-variant-type-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_AMBIGUOUS_VARIANT_TYPE"
+  },
+  {
+    "file": "tests\\units\\well-typed\\test-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\units\\well-typed\\test-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\units\\well-typed\\ignore.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\units\\ill-typed\\test-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\units\\ill-typed\\test-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\units\\ill-typed\\test-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\units\\ill-typed\\bad_ignore.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\tuples\\well-typed\\tuples-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\tuples\\ill-typed\\bad-tuples-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_TUPLE"
+  },
+  {
+    "file": "tests\\tuples\\ill-typed\\bad-tuples-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_TUPLE_INDEX_OUT_OF_BOUNDS"
+  },
+  {
+    "file": "tests\\tuples\\ill-typed\\bad-tuples-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
     "file": "tests\\sum-types\\well-typed\\sum-types-3.stella",
     "status": "Passed"
   },
@@ -19,7 +167,7 @@
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-8.stella",
     "status": "Passed",
-    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
   },
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-7.stella",
@@ -34,7 +182,7 @@
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-5.stella",
     "status": "Passed",
-    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
   },
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-4.stella",
@@ -44,17 +192,17 @@
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-3.stella",
     "status": "Passed",
-    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
   },
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-2.stella",
     "status": "Passed",
-    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
   },
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-13.stella",
     "status": "Passed",
-    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+    "error": "Error: ERROR_UNEXPECTED_PATTERN_FOR_TYPE"
   },
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-12.stella",
@@ -74,6 +222,1116 @@
   {
     "file": "tests\\sum-types\\ill-typed\\bad-sum-types-1.stella",
     "status": "Passed",
-    "error": "Error: ERROR_UNEXPECTED_SUBTYPE"
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\references\\well-typed\\refs-4.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\references\\well-typed\\refs-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\references\\well-typed\\refs-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\references\\well-typed\\refs-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-type-for-expression-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-type-for-expression-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-type-for-expression-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-type-for-expression-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-memory-address-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_MEMORY_ADDRESS"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-memory-address-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_MEMORY_ADDRESS"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-memory-address-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_MEMORY_ADDRESS"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\unexpected-memory-address-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_MEMORY_ADDRESS"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\not-a-reference-5.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\not-a-reference-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_REFERENCE"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\not-a-reference-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TUPLE"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\not-a-reference-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_REFERENCE"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\not-a-reference-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_REFERENCE"
+  },
+  {
+    "file": "tests\\references\\ill-typed\\ambiguous-reference-type-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_AMBIGUOUS_REFERENCE_TYPE"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-8.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-7.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-6.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-5.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-4.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\well-typed\\records-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\records-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-9.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-8.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-7.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-6.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-5.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-23.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-21.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-20.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_FIELD_ACCESS"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-19.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_FIELD_ACCESS"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-18.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_FIELD_ACCESS"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-17.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_FIELD_ACCESS"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-16.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_FIELD_ACCESS"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-15.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-14.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-13.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-12.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-11.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-10.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_RECORD"
+  },
+  {
+    "file": "tests\\records\\ill-typed\\bad-records-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\pairs\\well-typed\\pairs-6.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\pairs\\well-typed\\pairs-5.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\pairs\\well-typed\\pairs-4.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\pairs\\well-typed\\pairs-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\pairs\\well-typed\\pairs-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\pairs\\well-typed\\pairs-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-9.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-8.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-7.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-6.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-5.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_TUPLE_INDEX_OUT_OF_BOUNDS"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-17.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-16.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-15.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-14.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-13.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-12.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-11.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TUPLE"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-10.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\pairs\\ill-typed\\bad-pairs-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\lists\\well-typed\\lists-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\lists\\well-typed\\lists-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\lists\\well-typed\\lists-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\lists\\well-typed\\empty-list.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\unexpected-list-pair.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\unexpected-list-natrec.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\unexpected-list-let-bindings.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\unexpected-list-if-condition.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\unexpected-empty-list.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\unexepected-list-unit.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\not-a-list-tail.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\not-a-list-isempty.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\not-a-list-head.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_LIST"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\bad-variants-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\bad-lists-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\bad-lists-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\lists\\ill-typed\\ambiguous-list-type-isempty.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LIST"
+  },
+  {
+    "file": "tests\\let-bindings\\well-typed\\let-4.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\let-bindings\\well-typed\\let-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\let-bindings\\well-typed\\let-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\let-bindings\\well-typed\\let-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\well-typed\\test-7.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\well-typed\\test-6.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\well-typed\\test-5.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\well-typed\\test-4.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\well-typed\\test-2.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\well-typed\\test-1.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-7-1.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-6-1.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-5-1.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-3.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-2-2.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-2-1.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-1-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_TUPLE"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-1-3.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-1-2.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\structural-patterns\\ill-typed\\test-1-1.stella",
+    "status": "Passed",
+    "error": "Error: O"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-7.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-6.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-5.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\let-bindings\\ill-typed\\bad-let-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\try-with-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\try-with-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\try-catch-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\try-catch-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\throw-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\throw-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\panic-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\panic-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\panic-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\exceptions\\well-typed\\extra-tests\\open-variant-exceptions.stella",
+    "status": "Failed",
+    "error": "Expected success for well-typed test, but it failed."
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-try-with-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-try-with-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-try-with-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-try-catch-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-try-catch-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-try-catch-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-throw-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\unexpected-type-for-expression-throw-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\exception-type-not-declared-try-with.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_EXCEPTION_TYPE_NOT_DECLARED"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\exception-type-not-declared-try-catch.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_EXCEPTION_TYPE_NOT_DECLARED"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\exception-type-not-declared-throw.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_EXCEPTION_TYPE_NOT_DECLARED"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-throw-type-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-throw-type-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_LIST"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-throw-type-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-panic-type-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-panic-type-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_LIST"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-panic-type-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\ambiguous-panic-type-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\exceptions\\ill-typed\\extra-tests\\open-variant-exceptions.stella",
+    "status": "Passed",
+    "error": "Error: U"
+  },
+  {
+    "file": "tests\\core\\well-typed\\succ-with-func.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\squares.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\simple-types.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\simple-succ.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\simple-if.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\shadowed-variable-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\nested.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\negate.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\nat-to-bool.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\my-well-typed-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\my-well-typed-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\my-good-succ.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\my-good-if.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\many-if.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\logical-operators.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\inner-if.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\increment_twice.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\increment-triple.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\if-funcs.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\higher-order-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\higher-order-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\good-succ-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\good-succ-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\good-if.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\good-if-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\factorial.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\double-application.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\cubes.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\bool-to-nat.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\applying-actual-function-3.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\apply-increase.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\added-test-2.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\added-test-1.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\well-typed\\abstract-function.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\unexpected-type-for-parameter-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\invalid-not_.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\invalid-nat.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\if-funcs.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\bad-nat-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\argument-type-mismatch-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\argument-type-mismatch-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-parameter\\added-test-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\unexpected-type-for-expression-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\nat__rec-parameters.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\my-mismatch.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\my-ill-typed-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\my-ill-test-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\if-funcs.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\function-mismatch.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-succ-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-succ-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-squares-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-return-type.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-nat-rec-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-nat-rec-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-nat-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-iszero.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-if-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-if-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-if-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-higher-order-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-factorial.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\bad-abstraction.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\argument-type-mismatch-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\application-param-type.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-type-for-expression\\added-test-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\unexpected-lambda-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\my-ill-typed-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\if-funcs.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\bad-succ-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\bad-squares-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\bad-if-4.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\unexpected-lambda\\bad-function-call.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNEXPECTED_LAMBDA"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\undefined-variable\\undefined-variable-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\undefined-variable\\undefined-variable-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\undefined-variable\\undefined-variable-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\undefined-variable\\undef-var-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\undefined-variable\\bad-if-and-undefined-variable-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_UNDEFINED_VARIABLE"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\shadowed-variable-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\shadowed-variable-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\not-a-function-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\my-factorial.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\if-funcs.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\applying-non-function-3.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\applying-non-function-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\not-a-function\\applying-non-function-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_NOT_A_FUNCTION"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\missing_main\\missing-main-2.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_MISSING_MAIN"
+  },
+  {
+    "file": "tests\\core\\ill-typed\\missing_main\\missing-main-1.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_MISSING_MAIN"
+  },
+  {
+    "file": "tests\\ascriptions\\well-typed\\good-pair.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\ascriptions\\well-typed\\good-anonymous-function.stella",
+    "status": "Passed"
+  },
+  {
+    "file": "tests\\ascriptions\\ill-typed\\bad-pair.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_AMBIGUOUS_SUM_TYPE"
+  },
+  {
+    "file": "tests\\ascriptions\\ill-typed\\bad-anonymous-function.stella",
+    "status": "Passed",
+    "error": "Error: ERROR_AMBIGUOUS_SUM_TYPE"
   }
 ]

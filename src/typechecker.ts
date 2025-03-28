@@ -536,12 +536,14 @@ function typecheckExpr(
             const { expr: expression } = expr;
             const exprType = typecheckExpr(
                 expression,
-                expectedType && TYPE_LIST(expectedType),
+                expectedType,
                 ctx
             );
+
             if (exprType.type !== "TypeList") {
                 throw new Error(Errors.NOT_A_LIST);
             }
+
             return TYPE_BOOL;
         }
         case "Variant": {
@@ -563,6 +565,9 @@ function typecheckExpr(
             const fieldType = typecheckExpr(value!, fieldExpectedType, ctx);
             if (fieldExpectedType) {
                 verifyTypesMatch(fieldExpectedType, fieldType);
+            }
+            else {
+                throw new Error(Errors.AMBIGUOUS_VARIANT_TYPE);
             }
             return (
                 expectedType ?? {

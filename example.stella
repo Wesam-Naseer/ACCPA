@@ -1,5 +1,7 @@
 language core;
+extend with #lists;
 
-fn main(x : Nat) -> Nat {
-    return if false then true else false
+
+fn main(n : Nat) -> Bool {
+  return List::isempty([] as [Nat])
 }
