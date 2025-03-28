@@ -217,6 +217,8 @@ function typecheckExpr(
             const thenType = typecheckExpr(expr.thenExpr, expectedType, ctx);
             const elseType = typecheckExpr(expr.elseExpr, expectedType, ctx);
             // make sure both sides have the same type
+            console.log("typesss", thenType);
+            console.log("type2", elseType);
             verifyTypesMatch(thenType, elseType);
             return thenType;
         }
@@ -754,6 +756,44 @@ function verifyTypesMatch(expected: Type, actual: Type) {
     }
     if (actual.type === 'TypeBottom') {
         return true;
+    }
+    // tuples
+    if (expected.type === "TypeTuple" && actual.type !== "TypeTuple") {
+        throw new Error(Errors.NOT_A_TUPLE);
+    }
+    if (expected.type !== "TypeTuple" && actual.type === "TypeTuple") {
+        throw new Error(Errors.UNEXPECTED_TUPLE);
+    }
+
+
+    // Record
+    if (expected.type !== "TypeRecord" && actual.type === "TypeRecord") {
+        throw new Error(Errors.UNEXPECTED_RECORD);
+    }
+
+    if (expected.type === "TypeRecord" && actual.type !== "TypeRecord") {
+        throw new Error(Errors.NOT_A_RECORD);
+    }
+    // fun
+    if (expected.type === "TypeFun" && actual.type !== "TypeFun") {
+        throw new Error(Errors.NOT_A_FUNCTION);
+    }
+
+    if (expected.type !== "TypeFun" && actual.type === "TypeFun") {
+        throw new Error(Errors.UNEXPECTED_LAMBDA);
+    }
+
+    // list
+    if (expected.type !== "TypeList" && actual.type === "TypeList") {
+        throw new Error(Errors.UNEXPECTED_LIST);
+    }
+
+    if (expected.type === "TypeList" && actual.type !== "TypeList") {
+        throw new Error(Errors.NOT_A_LIST);
+    }
+
+    if (expected.type !== actual.type) {
+        throw new Error(Errors.UNEXPECTED_TYPE_FOR_EXPRESSION);
     }
     console.log('Matching types', expected, 'and', actual);
     if (expected.type === actual.type) {
